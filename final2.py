@@ -1,4 +1,4 @@
-import subprocess
+import subprocess #변경된 파일입니다
 import json
 import requests
 from datetime import datetime, timedelta
