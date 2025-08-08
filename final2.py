@@ -100,7 +100,7 @@ def collect_and_send():
             "rssi": rssi,
             "ping": ping,
             "speed": round(bps, 2),
-            "ping_timeout": ping >= 300.0
+            "ping_timeout": (ping == 0) or (ping >= 300.0)
         }
         data_payload.append(data)
         time.sleep(0.2)
